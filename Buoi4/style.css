@@ -1,0 +1,30 @@
+.container {
+    margin-top: 30px;
+    position: fixed;
+    left: 40%;
+    bottom: 50%;
+    line-height: 1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+button {
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(26, 134, 134);
+    cursor: pointer;
+    border: 0px;
+}
+
+#login {
+    color: greenyellow:
+
+}

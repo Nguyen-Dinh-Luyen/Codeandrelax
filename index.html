@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai so 1 + Bai so 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nametag">Exercise 1:</div>
+        <div class="sub-container">
+            <label for="start" class="label1">Start: </label><br>
+            <input type="text" id="start">
+        </div>
+        <div class="sub-container">
+            <label for="end" class="label1">End: </label><br>
+            <input type="text" id="end">
+        </div>
+        <div id="output"></div>
+    </div>
+    <button onclick="sumPrimeNumbers()" class="button">Total sum of prime numbers within</button>
+    <div class="output">
+        <ul id="list1">
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="nametag">Exercise 2:</div>
+        <div class="sub-container">
+            <label for="stars" class="label1">Height of the triangle (from 1 to 10): </label><br>
+            <input type="text" id="stars">
+        </div>
+    </div>
+    <button onclick="numberOneTriangle()" class="button">Draw a triangle</button>
+    <div class="output">
+        <ul id="list2">
+
+        </ul>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>

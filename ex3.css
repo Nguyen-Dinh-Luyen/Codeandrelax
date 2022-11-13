@@ -1,0 +1,50 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #BFC8E6;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    background-color:  white;
+    position: absolute;
+    height: 70%;
+    width: 76%;
+    margin: 8% 12%;
+}
+.nav-bar {
+    width: 88%;
+    height: 15.5%;
+    margin: 4% 6% 2% 6%;
+}
+.menu {
+    display: flex;
+    height: 100%;
+}
+.site {
+    font-size: 32px;
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+.search {
+    width: 35%;
+    height: 100%;
+}
+#search-box {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    padding: 16px;
+}
+.category {
+
+}
+.row {
+    display: flex;
+}
+
+.user {
+    background-color: #FBFCFF;
+}
+.blue {
+    background-color: #849FFF;
+}

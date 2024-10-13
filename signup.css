@@ -1,104 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato';
 }
 
-.login-form {
-    width: 100%;
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('assets/boba.jpg') no-repeat center center fixed;
+    background-size: cover;
     height: 100vh;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
 }
 
-.form-txt {
-    margin: 0 auto 40px;
-    text-align: center;
-}
-
-.big {
-    font-family: 'Lato';
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #4f4f4f;
-}
-
-.small {
-    font-family: 'Lato';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #828282;
-}
-
-form {
-    width: 40vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);
-    border-radius: 16px;
-    padding: 40px;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-}
-
-label {
-    display: block;
-}
-
-input {
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 16px;
-    margin-bottom: 24px;
-    border: 1px solid #E0E0E0;
-    border-radius: 4px;
+    max-width: 400px;
+    padding: 15px;
 }
 
-input[type="checkbox"] {
-    border-radius: 3px;
-    background-color: #35ce97;
+.signup-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
-.inline {
-    display: inline-block;
-    margin: 0 auto;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
 }
 
-.checkbox {
-    display: inline-block;
-    margin: 0;
-    width: 10%;
+.input-group {
+    margin-bottom: 15px;
 }
 
-.forgot {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: right;
-    width: 39%;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
 }
 
-input[type="submit"] {
-    color:white ;
-    background-color: #35ce97;
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
 }
-.remember{
-    display: inline-block;
-    margin: 0 auto;
-    width: 49%;
-    text-align: left;
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
-.Signin {
-    color:white ;
-    background-color: #35ce97;
-    border-radius: 3px;
-   
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(255, 75, 43, 0.5);
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.options a:hover {
+    color: #ff416c;
 }

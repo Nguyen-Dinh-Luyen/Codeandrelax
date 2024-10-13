@@ -2,42 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="signup.css">
-    <title>Sign Up</title>
+    <script>
+        function redirectToHome() {
+            window.location.href = "index.html";  // Đường dẫn đến trang bạn muốn chuyển hướng
+        }
+    </script>
 </head>
 <body>
-    <header></header>
-    <div class="login-form">
-        <div class="form-txt">
-            <div class="big">Sign up</div>
-            <div class="small">Have an account</div>
-        </div>
-        <div class="form">
-            <form action="">
-                <fieldset class="txt-input">
-                    <label for="usernam">Username <input type="Username" name="Username" id="Username" placeholder="Username" required></label>
-                    <label for="email">Email Address <input type="email" name="email" id="email" placeholder="Email" required></label>
-                    <label for="password">Password <input type="password" name="password" id="password" placeholder="Password" required></label>
-                </fieldset>
-                <fieldset class="check">
-                    <input type="checkbox" name="remember-me" id="remember-me" class="checkbox"> 
-                    <label for="remember-me" class="remember">Remember me</label>
-                    <a href="" class="forgot">Forgot your password?</a>
-                </fieldset>
-                <div class="Signin">
-                <a href="index.html"> Sign in</a>
-            </div>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                </div>
+                <button type="button" class="signup-btn" onclick="redirectToHome()">Sign Up</button>
+                <div class="options">
+                    <a href="login.html">Already have an account? Login</a>
+                </div>
             </form>
         </div>
     </div>
-    <footer></footer>
-</body>
-</html>
-
-
-
-    
 </body>
 </html>

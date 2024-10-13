@@ -1,0 +1,113 @@
+/* Cài đặt chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede3e3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+/* Tiêu đề */
+h1 {
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+/* Bố cục form thanh toán */
+.checkout-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Phần thông tin sản phẩm */
+.product-info {
+    width: 45%;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #d32f2f;
+}
+
+/* Phần thông tin thanh toán */
+.payment-info {
+    width: 50%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Phương thức thanh toán */
+.payment-methods label {
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}
+
+/* Nút thanh toán */
+.pay-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+    background-color: #c1271b;
+}
+
+/* Thông báo cảm ơn */
+.thankyou-message {
+    font-size: 1.2rem;
+    color: #4caf50; /* Màu xanh cho thông báo thành công */
+}
+
+.hidden {
+    display: none;
+}

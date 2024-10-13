@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
+    <script>
+        function redirectToHome() {
+            window.location.href = "index.html";  // Đường dẫn đến trang bạn muốn chuyển hướng
+        }
+    </script>
+    
 </head>
 <body>
-    <header></header>
-    <div class="login-form">
-        <div class="form-txt">
-            <div class="big">Đăng nhập</div>
-            <div class="small">The best place to Sell and Tell</div>
-        </div>
-        <div class="form">
-            <form action="">
-                <fieldset class="txt-input">
-                    <label for="email">Email Address <input type="email" name="email" id="email" placeholder="Email" required></label>
-                    <label for="password">Password <input type="password" name="password" id="password" placeholder="Password" required></label>
-                </fieldset>
-                <fieldset class="check">
-                    <input type="checkbox" name="remember-me" id="remember-me" class="checkbox"> 
-                    <label for="remember-me" class="remember">Remember me</label>
-                    <a href="" class="forgot">Forgot your password?</a>
-                </fieldset>
-                <a href="index.html"> Sign in</a>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password">
+                </div>
+                <button type="button" class="login-btn" onclick="redirectToHome()">Login</button>
+
+                <div class="options">
+                    <a href="#">Forgot Password?</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
             </form>
         </div>
     </div>
-    <footer></footer>
 </body>
 </html>

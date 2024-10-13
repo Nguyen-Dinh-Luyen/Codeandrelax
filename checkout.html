@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thanh Toán</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Trang Thanh Toán</h1>
+
+        <div class="checkout-form">
+            <div class="product-info">
+                <img src="assets/anh7maidinh.jpg" alt="Áo đấu MU" class="product-image">
+                <h2>Áo Đấu MU</h2>
+                <p class="price">Giá: 399.000 VND</p>
+            </div>
+
+            <div class="payment-info">
+                <h3>Vui lòng điền thông tin</h3>
+
+                <label for="name">Họ tên</label>
+                <input type="text" id="name" placeholder="Nhập họ tên" required>
+
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" placeholder="Nhập địa chỉ" required>
+
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" placeholder="Nhập số điện thoại" required>
+
+                <h3>Phương Thức Thanh Toán</h3>
+                <div class="payment-methods">
+                    <label><input type="radio" name="payment-method" value="credit-card" required> Thẻ tín dụng</label>
+                    <label><input type="radio" name="payment-method" value="paypal"> ZaloPay</label>
+                    <label><input type="radio" name="payment-method" value="cash-on-delivery"> Thanh toán khi nhận hàng</label>
+                </div>
+
+                <button id="pay-button" class="pay-button">Thanh Toán</button>
+            </div>
+        </div>
+
+        <div id="thankyou-message" class="thankyou-message hidden">
+            <h2>Cảm ơn quý khách đã mua hàng!</h2>
+            <p>Thanh toán thành công.</p>
+            <a href="index.html">Quay lại trang sản phẩm</a>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

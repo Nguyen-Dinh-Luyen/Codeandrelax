@@ -26,3 +26,16 @@ prev.addEventListener('click', function (event) {
   comment.style.transform = `translateY(${translateY}px)`
   count++
 })
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const buyButtons = document.querySelectorAll(".buy-button");
+
+  buyButtons.forEach(button => {
+      button.addEventListener("click", function(event) {
+          const productId = this.parentElement.getAttribute("data-id");
+          // Chuyển hướng sang trang thanh toán với productId
+          window.location.href = `checkout.html?productId=${productId}`;
+      });
+  });
+});

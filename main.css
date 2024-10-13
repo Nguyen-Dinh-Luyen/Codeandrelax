@@ -7,6 +7,15 @@
     cursor: pointer;
 }
 
+#header .logo  {
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 15px;
+    height: 130px;
+    width: 130px;
+}
+
 #wrapper {
     /* Kích thước màn hình là 1280 x 720 */
     width: 100%;
@@ -36,6 +45,34 @@
 }
 
 
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px; /* Chiều rộng của thanh tìm kiếm */
+    border: none;
+    border-radius: 5px 0 0 5px; /* Bo góc bên trái */
+    outline: none; /* Xóa viền mặc định */
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Bo góc bên phải */
+    background-color: #f44336; /* Màu nền cho nút tìm kiếm */
+    color: white;
+    cursor: pointer; /* Hiển thị con trỏ tay khi di chuột */
+}
+
+.search-button:hover {
+    background-color: #d32f2f; /* Màu nền khi di chuột vào nút */
+}
+
 #actions {
     display: flex;
 }
@@ -45,12 +82,10 @@
 }
 
 
-
-
-
 #banner {
     width: 100%;
-    background-image :url("assets/aodep.jpg");
+    background-image :url("assets/background.jpg");
+    background-size: cover;
     height: 463px;
     margin-top:40px;
     display: flex;
@@ -136,7 +171,7 @@
 
 #list-products .item {
     width: 290px;
-    height: 390px;
+    height: 450px;
     background:#362f2f;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -146,13 +181,25 @@
     display: block;
     margin:0px auto;
     margin-top:17px;
+    height: 200px;
+    width: 200px;
 }
 
 #list-products .item .stars {
 
     display: flex;
+    justify-content: center;
     margin:0px auto;
-    width: 50%;
+    width: 10%;
+}
+
+#list-products .item .stars img {
+    display:flex;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
 }
 
 #list-products .item .name {
@@ -174,6 +221,20 @@
     margin-top:20px;
 }
 
+#list-products .item .buy-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #db3434;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#list-products .item .buy-button:hover {
+    background-color: #b92929;
+}
 
 .list-page {
     width: 50%;
